@@ -53,6 +53,19 @@ public class Aggregator
         return 0;
     }
 
+    public boolean compare(int a, int b)
+    {
+        if(Text == Aggregators.Max)
+        {
+            return a > b;
+        }
+        else if(Text == Aggregators.Min)
+        {
+            return a < b;
+        }
+        return false;
+    }
+
     private int computeMin(int a, int b)
     {
         if(a < b){

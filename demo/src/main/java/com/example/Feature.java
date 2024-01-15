@@ -7,14 +7,14 @@ import com.example.Constants.Features;
 
 public class Feature {
 
-    private String Text;
+    private static String Text;
 
     public Feature(String text)
     {
         Text = text;
     }
 
-    public int getDefault()
+    public static int getDefault()
     {
         if(Text == Features.Max)
         {
@@ -28,7 +28,7 @@ public class Feature {
         return 0;
     }
 
-    public int apply(List<Integer> list)
+    public static int apply(List<Integer> list)
     {
         if(Text == Features.Max)
         {
